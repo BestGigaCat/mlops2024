@@ -1,0 +1,11 @@
+Description: A stack containing resources for an AWS Serverless Lambda function deployed through an AWS ECR. 
+
+Resources:
+  primer: 
+      Type: AWS::Lambda::Function
+      Properties:
+        FunctionName: mlops-inference
+        Code: 
+          ImageUri: 846634201516.dkr.ecr.us-west-2.amazonaws.com/mlops:latest
+        PackageType: Image
+        Role: arn:aws:iam::846634201516:role/MLOpsCourseRole
