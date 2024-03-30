@@ -1,8 +1,9 @@
 import json
 import boto3
 import pandas as pd
+from codeguru_profiler_agent import with_lambda_profiler
 
-
+@with_lambda_profiler(profiling_group_name="aws-lambda-codeguru")
 def lambda_handler(event, context):
     churn = pd.read_csv("./churn.txt")
     pd.set_option("display.max_columns", 500)
