@@ -5,10 +5,16 @@
             "Effect": "Allow",
             "Principal": {
                 "Service": [
-                    "glue.amazonaws.com",
-                    "lambda.amazonaws.com",
+                    "ecs.amazonaws.com",
+                    "cloudformation.amazonaws.com",
+                    "codecommit.amazonaws.com",
+                    "codepipeline.amazonaws.com",
+                    "codebuild.amazonaws.com",
+                    "codedeploy.amazonaws.com",
                     "sagemaker.amazonaws.com",
-                    "states.amazonaws.com"
+                    "states.amazonaws.com",
+                    "glue.amazonaws.com",
+                    "lambda.amazonaws.com"
                 ]
             },
             "Action": "sts:AssumeRole"
