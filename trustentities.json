@@ -14,7 +14,8 @@
                     "sagemaker.amazonaws.com",
                     "states.amazonaws.com",
                     "glue.amazonaws.com",
-                    "lambda.amazonaws.com"
+                    "lambda.amazonaws.com",
+                    "firehose.amazonaws.com"
                 ]
             },
             "Action": "sts:AssumeRole"
